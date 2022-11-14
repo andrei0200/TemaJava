@@ -1,4 +1,4 @@
-package ro.mta.ip.TemaJava2.server;
+package ro.mta.ip.TemaJava2.serverClient;
 
 import ro.mta.ip.TemaJava.Human;
 import ro.mta.ip.TemaJava.Profesor;

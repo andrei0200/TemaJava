@@ -1,4 +1,4 @@
-package ro.mta.ip.TemaJava2.client;
+package ro.mta.ip.TemaJava2.serverClient;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 //configuratie server client pe mai multe threaduri
 //https://gyawaliamit.medium.com/multi-client-chat-server-using-sockets-and-threads-in-java-2d0b64cad4a7
-public class Main {
+public class Client {
 
     public static void main(String[] args) {
         try (Socket socket = new Socket("localhost", 5000)){
@@ -25,10 +25,10 @@ public class Main {
             String response;
             String clientName = "empty";
 
-            ClientRunnable clientRun = new ClientRunnable(socket);
+            //ClientRunnable clientRun = new ClientRunnable(socket);
 
 
-            new Thread(clientRun).start();
+            //new Thread(clientRun).start();
            //loop closes when user enters exit command
            
            do {

@@ -1,28 +1,28 @@
-package ro.mta.ip.TemaJava2.server;
+package ro.mta.ip.TemaJava2.serverClient;
 
-public class Profesor implements Human {
+public class Student implements Human {
 
     private String nume;
     private String prenume;
     private String acronim;
     private int varsta;
-    private String materie;
+    private int anStudiu;
 
-    public Profesor(String nume, String prenume, String acronim, int varsta, String materie) {
+    public Student(String nume, String prenume, String acronim, int varsta, int anStudiu) {
         this.nume = nume;
         this.prenume = prenume;
         this.acronim = acronim;
         this.varsta = varsta;
-        this.materie = materie;
+        this.anStudiu = anStudiu;
     }
 
     @Override
     public String toString() {
-        return "[Prof. " + nume + " " +
-                prenume + ", Fac. " +
+        return "[Sd. " + nume + " " +
+                prenume + ", Anul " +
+                anStudiu + ", Fac. " +
                 acronim + ", Varsta " +
-                varsta + ", Materie predata - " +
-                materie + "]";
+                varsta + "]";
     }
 
     @Override
@@ -70,12 +70,12 @@ public class Profesor implements Human {
         this.varsta = varsta;
     }
 
-    public String getMaterie() {
-        return materie;
+    public int getAnStudiu() {
+        return anStudiu;
     }
 
-    public void setMaterie(String materie) {
-        this.materie = materie;
+    public void setAnStudiu(int anStudiu) {
+        this.anStudiu = anStudiu;
     }
 
 

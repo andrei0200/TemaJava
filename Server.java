@@ -1,17 +1,11 @@
-package ro.mta.ip.TemaJava2.server;
-
-import ro.mta.ip.TemaJava.Human;
-import ro.mta.ip.TemaJava.Profesor;
-import ro.mta.ip.TemaJava.Student;
+package ro.mta.ip.TemaJava2.serverClient;
 
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Scanner;
 
 
-public class Main {
+public class Server {
 
     public static void main(String[] args) {
         //using serversocket as argument to automatically close the socket
